@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.main-section {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.progress {
+    width: 50vw;
+    background-color: lightgray;
+    height: 3vh;
+
+}
+.clockWrapper {
+    width: 80vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clockDiv{
+    border: 5px solid #61AB66;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    height: 45vh;
+    width: 80vw;
+    border-radius: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#1B2320;
+
+}
+.controlButtons {
+    position: absolute;
+    padding: 0 40px;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 60vh;
+}
+/* .controlButtons button {
+    margin: 0px;
+    height: 8vh;
+    width: 15vw;
+    border-radius: 30px;
+} */
+
+.slides {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.slides ul {
+    height: 15vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: scroll;
+}
+.slides ul li {
+    margin: 0px;
+    font-size: 18px;
+}
+.slides h1 {
+    text-align: left;
+    font-size: 30px;
+    margin: 0;
+}
+.controlSlideButtons{
+    display: flex;
+    width: 95vw;
+    justify-content: space-between;
+    position: absolute;
+}
+.fa-chevron-left, .fa-chevron-right {
+    font-size: 50px;
+}
+.fa-play-circle, .fa-stop-circle {
+    font-size: 40px;
+}
+.fa-redo {
+    font-size: 36px;
+}
+@media(min-width: 768px){
+    .progress {
+        height: 4vh;
+    }
+    .clockWrapper {
+        margin-top: 6vh;
+    }
+    .clockDiv{
+        font-size: 90px;
+        height: 60vh;
+        width: 70vw;
+        border-radius: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .controlButtons {
+        padding: 0 16vw;
+        top: 60vh;
+    }
+    .fa-play-circle, .fa-stop-circle {
+        font-size: 60px;
+    }
+    .fa-redo {
+        font-size: 50px;
+    }
+    .fa-chevron-left, .fa-chevron-right {
+        font-size: 70px;
+    }
+    .slides ul li {
+        font-size: 24px;
+    }
+    .slides h1 {
+        text-align: left;
+        font-size: 40px;
+    }
+    .slides {
+        margin-top: 50px;
+    }
+    .controlSlideButtons{
+        margin-top: 10px;
+    }
+}
+@media (min-width: 1024px){
+    .clockDiv{
+        font-size: 90px;
+        height: 70vh;
+        width: 30vw;
+        border-radius: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .controlButtons {
+        padding: 0 32vw;
+        top: 55vh;
+    }
+    .slides {
+        margin-top: 50px;
+    }
+    .controlSlideButtons{
+        margin-top: 10px;
+    }
+
+}

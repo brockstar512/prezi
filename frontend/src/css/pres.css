@@ -1,0 +1,122 @@
+.presMain, .updatePresMain {
+    margin: 0 7.5vw 0 5vw;
+}
+.presMain a {
+    text-decoration: none;
+}
+h2 {
+    text-align: center;
+}
+/* .presMain h3 {
+    display: flex;
+    justify-content: space-between;
+} */
+.presMain .fa-edit{
+    position: absolute;
+    top: 8vh;
+    right: 8px;
+}
+.sectionHeader {
+    display: flex;
+    align-items: center;
+}
+.sectionHeader h3{
+    flex: 1;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-plus, .fa-minus{
+    font-size: 12px;
+}
+
+.sectionPlace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.presSectionDisplay{
+    margin-top: 15px;
+}
+.presSectionDisplay ul{
+    margin: 0 12vw;
+    padding: 0;
+}
+.startButton {
+    display: flex;
+    border-radius: 5px;
+    height: 6vh;
+    width: 30vw;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f5f5f5;
+    background-color: #61AB66;
+    justify-content: center;
+    align-items: center;
+}
+
+.startPresSpan {
+    display: flex;
+}
+
+.startTimerClass {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+@media(min-width: 768px){
+    .presMain button {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .presMain .startButton {
+        width: 25vw;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .presMain h2 {
+        font-size: 32px;
+    }
+    .presMain h3 {
+        font-size: 24px;
+    }
+    .presMain p {
+        margin: 60px 0;
+        font-size: 24px;
+    }
+    .fa-plus, .fa-minus{
+        font-size: 18px;
+    }
+    .presSectionDisplay {
+        margin: 40px 15px;
+    }
+    .presSectionDisplay ul{
+        margin: 0 7vw;
+        padding: 0;
+    }
+    .sectionPlace h3 {
+        font-size: 24px;
+    }
+    .updatePresMain p {
+        font-size: 24px;
+    }
+    .time {
+        font-size: 30px;
+    }
+    .startPresSpan {
+        font-size: 18;
+    }
+}
+@media(min-width: 1024px){
+    .presMain {
+        margin: 0 5vw 0 2vw;
+    }
+    .presSectionDisplay ul{
+        margin: 0 4vw;
+    }
+    .presMain .startButton {
+        width: 10vw;
+    }
+}

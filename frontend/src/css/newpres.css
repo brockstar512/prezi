@@ -1,0 +1,203 @@
+.newPresMain {
+    margin-top: 8vh;
+}
+.fa-times {
+    font-size: 35px;
+}
+.addProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding: 0 20px;
+}
+.addProject label{
+    font-size: 20px;
+}
+input {
+    margin: 0 5px;
+    font-size: 12px;
+    width: 30vw;
+}
+.addProject form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.addProject form input {
+    margin: 30px;
+    width: 70vw;
+}
+.addProject form button{
+    font-size: 16px;
+    /* border: 2px solid black; */
+}
+.name {
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+}
+.pointLabel {
+    font-size: 14px;
+}
+.fullpage {
+    display: flex;
+    justify-content: center;
+}
+.fullpage h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sectionForm {
+    position: relative;
+}
+.sectionFrom label, .sectionForm input {
+    margin: 10px 5px;
+}
+.sectionForm input {
+    width: 50vw;
+    font-size: 16px;
+    height: 5vh;
+}
+.sectionForm button{
+    position: absolute;
+    bottom: 2vh;
+    padding: 4px 7px;
+}
+
+.time {
+    text-align: right;
+}
+.includeTitle {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+.includeTitle h4 {
+    text-align: left;
+    margin: 0;
+    font-size: 18px;
+}
+.includeTitle a {
+    text-align: center;
+}
+button {
+    border: 2px solid black;
+}
+.section button{
+    padding: 2px 5px;
+}
+.section {
+    margin-bottom: 30px;
+}
+.section p{
+    margin: 10px 0;
+}
+.section ul {
+    padding: 0;
+    margin: 0px 30px;
+}
+.section ul li {
+    margin: 15px 0;
+}
+.section form {
+    display: flex;
+    align-items: center;
+}
+.section input {
+    height: 4vh;
+    font-size: 14px;
+}
+.doneButton {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+@media(min-width: 768px){
+    .newPresMain h1 {
+        font-size: 40px;
+    }
+    .fa-times {
+        font-size: 36px;
+    }
+    .addProject label {
+        font-size: 28px;
+    }
+    .addProject input {
+        font-size: 24px;
+        height: 5vh;
+    }
+    .addProject form button{
+        font-size: 22px;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+    .includeTitle h2 {
+        font-size: 36px;
+    }
+    .includeTitle h4 {
+        font-size: 24px;
+    }
+    .sectionForm label {
+        font-size: 22px;
+    }
+    .sectionForm input {
+        font-size: 22px;
+        width: 60vw;
+    }
+    .sectionForm button {
+        padding: 5px 10px;
+    }
+    .addSectionButton {
+        font-size: 18px;
+    }
+    .doneButton {
+        font-size: 20px;
+        padding: 12px 25px;
+        border-radius: 30px;
+    }
+    .section p {
+        font-size: 24px;
+    }
+    .section label {
+        font-size: 22px;
+    }
+    .section button {
+        padding: 5px 8px;
+    }
+    .section input {
+        font-size: 20px;
+    }
+    ul li {
+        font-size: 22px;
+    }
+}
+@media(min-width: 1024px){
+    .addProject form{
+        display: flex;
+        flex-direction: row;
+    }
+    .addProject form input {
+        width: 50vw;
+    }
+    .sectionForm input {
+        width: 30vw;
+    }
+    .sectionForm {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .sectionForm button {
+        position: relative;
+        bottom: 0;
+        padding: 5px 10px;
+    }
+    .sectionForm label, .sectionForm input {
+        margin-right: 10px;
+    }
+    .addSectionButton {
+        align-self: center;
+    }
+
+}
