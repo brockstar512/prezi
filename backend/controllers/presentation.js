@@ -1,11 +1,17 @@
 const Presentation = require('../models/presentation')
 
 const getAll = (req, res) => {
-    Presentation.Presentation.find().then(prez => res.json(prez))
+    Presentation.Presentation
+        .find()
+        .populate({ path: 'sections', populate: { path: 'talking_points' }})
+        .then(prez => res.json(prez))
 }
 
 const getById = (req, res) => {
-    Presentation.Presentation.findById(req.params.id).then(prez => res.json(prez))
+    Presentation.Presentation
+        .findById(req.params.id)
+        .populate({ path: 'sections', populate: { path: 'talking_points' }})
+        .then(prez => res.json(prez))
 }
 
 const create = (req, res) => {
@@ -20,7 +26,7 @@ const remove = (req, res) => {
 }
 const addSection = (req, res) => {
     Presentation.Presentation.findById(req.params.id).then(prez => Presentation.Section.create(req.body).then(sect =>{
-        prez.sections.push(sect)
+        prez.sections.push(sect._id)
         prez.save()
         res.json(prez)
     }))
