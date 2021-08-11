@@ -1,11 +1,17 @@
 const Section = require('../models/presentation')
 
 const getAll = (req, res) => {
-    Section.Section.find().then(sections => res.json(sections))
+    Section.Section
+        .find()
+        .populate('talking_points')
+        .then(sections => res.json(sections))
 }
 
 const getById = (req, res) => {
-    Section.Section.findById(req.params.id).then(section => res.json(section))
+    Section.Section
+        .findById(req.params.id)
+        .populate('talking_points')
+        .then(section => res.json(section))
 }
 
 const create = (req, res) => {
@@ -21,7 +27,7 @@ const remove = (req, res) => {
 
 const addTalkingPoint = (req, res) => {
     Section.Section.findById(req.params.id).then(sect => Section.TalkingPoint.create(req.body).then(point=>{
-        sect.talking_points.push(point)
+        sect.talking_points.push(point._id)
         sect.save()
         res.json(sect)
         

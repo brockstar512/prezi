@@ -2,24 +2,25 @@ const mongoose = require('../connection')
 const Schema = mongoose.Schema
 
 
-const TalkingPointSchema = new Schema ({
-    "point": String
+const TalkingPointSchema = Schema({
+    point: String
 })
 
-const SectionSchema = new Schema({
-    "title": String,
-    "time": Number,
-    "talking_points": [TalkingPointSchema]
+const SectionSchema = Schema({
+    title: String,
+    time: Number,
+    talking_points: [{ type: Schema.Types.ObjectId, ref: 'TalkingPoint' }]
 })
 
-const PresentationSchema = new Schema({
-    "name": String,
-    "sections": [SectionSchema]
+const PresentationSchema = Schema({
+    name: String,
+    sections: [{ type: Schema.Types.ObjectId, ref: 'Section' }]
 })
 
-const Presentation = mongoose.model('User', PresentationSchema)
+const Presentation = mongoose.model('Presentation', PresentationSchema)
 const Section = mongoose.model('Section', SectionSchema)
-const TalkingPoint = mongoose.model('Talkingpoint', TalkingPointSchema)
+const TalkingPoint = mongoose.model('TalkingPoint', TalkingPointSchema)
+
 module.exports= {
     Presentation,
     Section,

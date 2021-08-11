@@ -16,7 +16,7 @@ export const findById = async (sectId)=>{
 }
 
 export const createSect = async (presId, body) => {
-    const resp = await api.post(`/sections/${presId}`, body);
+    const resp = await api.put(`/pres/addsection/${presId}`, body);
     return resp.data
 }
 
